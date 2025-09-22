@@ -27,8 +27,9 @@ if "chat_complete" not in st.session_state:
 # ----------------------------
 client = OpenAI(
     api_key=st.secrets["OPENROUTER_API_KEY"],
-    api_base=st.secrets["OPENAI_BASE_URL"]  # e.g., "https://openrouter.ai/api/v1"
+    base_url=st.secrets["OPENROUTER_BASE_URL"]  # ✅ correct
 )
+
 
 # ----------------------------
 # Helper Functions
