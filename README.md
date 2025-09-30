@@ -1,3 +1,9 @@
+## Live Demo
+
+Check out the live version of this HR Interview Assistant app deployed on Streamlit Cloud:
+
+(https://hrinterviewspecificchatbot.streamlit.app/)
+
 Interview Tool – HR Round (Streamlit App).
 
 A simple Streamlit-based web app designed to help candidates prepare for HR interview rounds.
