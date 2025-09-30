@@ -1,3 +1,17 @@
-openai>=1.1.0
-streamlit
-streamlit-js-eval
+# Core
+python>=3.10
+pip>=23.0
+
+# Streamlit for web app
+streamlit>=1.25.0
+
+# OpenAI/OpenRouter APIs
+openai>=1.0.0
+requests>=2.32.0
+
+# Environment & secrets management
+python-dotenv>=1.0.0
+
+# Optional: Data handling if needed
+pandas>=2.1.0
+numpy>=1.26.0

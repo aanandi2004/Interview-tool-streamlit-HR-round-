@@ -13,7 +13,7 @@ st.title("💬 AI-Powered HR Interview Tool")
 api_key = st.secrets["OPENROUTER_API_KEY"]
 base_url = st.secrets["OPENROUTER_BASE_URL"]
 
-# Initialize OpenAI client with OpenRouter
+# ✅ Initialize OpenAI client with OpenRouter
 client = OpenAI(
     api_key=api_key,
     base_url=base_url
@@ -33,6 +33,7 @@ if "feedback_shown" not in st.session_state:
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
+
 # ----------------------------
 # Helper Functions
 # ----------------------------
@@ -41,6 +42,7 @@ def complete_setup():
 
 def show_feedback():
     st.session_state.feedback_shown = True
+
 
 # ----------------------------
 # Step 1: Personal Info & Job Setup
@@ -94,6 +96,7 @@ if not st.session_state.setup_complete:
     if st.button("Start Interview", on_click=complete_setup):
         st.success("Setup complete. Starting interview...")
 
+
 # ----------------------------
 # Step 2: Interview / Chat
 # ----------------------------
@@ -146,6 +149,7 @@ Interview for position: {st.session_state['level']} {st.session_state['position'
         st.success("Interview complete. Click below to see feedback.")
         if st.button("Get Feedback", on_click=show_feedback):
             st.session_state.feedback_shown = True
+
 
 # ----------------------------
 # Step 3: Feedback
